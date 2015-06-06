@@ -1,0 +1,21 @@
+{
+  "issuer": "https://your.authorization.server",
+  "client_registration": "scoped",
+  "providers": {
+    "password": true,
+    "google": {
+      "client_id": "CLIENT_ID",
+      "client_secret": "CLIENT_SECRET",
+      "scope": [
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/userinfo.email"
+      ]
+    }
+  },
+  "cookie_secret": "abd18699190e2e309acb",
+  "session_secret": "effa5b59406dcb67601d",
+  "redis": {
+    "url": "redis://HOST:PORT",
+    "auth": "PASSWORD"
+  }
+}
