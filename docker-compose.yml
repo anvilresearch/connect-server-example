@@ -4,5 +4,8 @@ server:
    - "3000:3000"
   volumes:
    - .:/src
-  command: "NODE_ENV=production node server.js"
+  command: "nv serve"
+  environment:
+    NODE_ENV: production
   restart: always
+
